@@ -156,9 +156,10 @@ color: var(--text-color-dark);
   color: #fff;
   font-weight: bold;
   font-size: 20px;
-  line-height: 30px;
+  line-height: normal;
   cursor: pointer;
   border-radius: 28px;
+  white-space: nowrap;
 }
 
 .button:hover{
@@ -188,4 +189,98 @@ color: var(--text-color-dark);
 
 .button--big{
   padding: 18px 40px 16px;
+}
+
+/* HERO */
+.hero {
+  padding-top: 92px;
+  padding-bottom: 222px;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-position: left calc(50%+476px) top 30px;
+}
+
+.hero__inner {
+  max-width: 565px;
+}
+
+.hero__title {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 80px;
+  line-height: 90px;
+  letter-spacing: -2px;
+  color: var(--text-color-dark);
+}
+
+.hero__text {
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-size: 22px;
+  line-height: 36px;
+}
+
+/* URL */
+.index-url-shortener-features-wrapper{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--light-bg);
+
+}
+
+.index-url-shortener-features-wrapper__url-shortener {
+  margin-top: -84px;
+}
+
+.url-shortener {
+}
+
+.url-shortenerf-form {
+  display: flex;
+  padding: 52px 64px;
+  /* background-image: purplebg; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  background-color: #4b3f6b;
+}
+.url-shortener__input_wrapper {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  margin-right: 24px;
+  position: relative;
+}
+.url-shortener__input {
+  flex-grow: 1;
+  display: block;
+  width: 100%;
+  padding: 14px 32px;
+  border-right: 3px solid transparent;
+  border-radius: 10px;
+  font-size: 20px;
+  line-height: 36px;
+  color: var(--text-color-dark);
+}
+.url-shortener__error-msg {
+  display: none;
+}
+
+.url-shortener__input:not(:focus):not(:placeholder-shown):invalid{
+  border-color: var(--error-color);
+  color: var(--error-color);
+}
+
+.url-shortener__input:not(:focus):not(:placeholder-shown):invalid ~
+.url-shortener__error-msg{
+  display: block;
+  position: absolute;
+  left: 0;
+  top: calc(100% + 8px);
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  font-style: italic;
+  color: var(--error-color);
+  letter-spacing: 0.11px;
 }
