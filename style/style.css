@@ -230,20 +230,21 @@ color: var(--text-color-dark);
 
 .index-url-shortener-features-wrapper__url-shortener {
   margin-top: -84px;
+
 }
 
-.url-shortener {
-}
 
 .url-shortenerf-form {
   display: flex;
   padding: 52px 64px;
+  margin-bottom: 24px;
   /* background-image: purplebg; */
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 10px;
   background-color: #4b3f6b;
 }
+
 .url-shortener__input_wrapper {
   flex-grow: 1;
   display: flex;
@@ -283,4 +284,39 @@ color: var(--text-color-dark);
   font-style: italic;
   color: var(--error-color);
   letter-spacing: 0.11px;
+}
+
+.url-shortener__results {
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.url-shortener__result {
+  display: flex;
+  align-items: center;
+  padding: 16px 24px;
+  border-radius: 5px;
+  background-color: #fff;
+  color: var(--text-color-dark);
+}
+
+.url-shortener__result:not(:last-child){
+  margin-bottom: 16px;
+}
+
+.url-shortener__orginal-link {
+  width: 100%;
+  margin-right: 24px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.url-shortener__short-link {
+  text-decoration: none;
+  color: var(--accent-color);
+  margin-right: 24px;
+}
+
+.url-shortener__copy-button{
+  min-width: 103px;
 }
