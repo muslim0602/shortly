@@ -53,7 +53,7 @@
         <section class="url-shortener">
           <div class="container">
             <h2 class="visually-hidden">Url Shortener</h2>
-            <form action="https://echo.htmlacademy.ru" method="POST" class="url-shortenerf-form">
+            <form class="url-shortenerf-form js-url-shortener-form" action="https://echo.htmlacademy.ru" method="POST" >
               <div class="url-shortener__input_wrapper">
                 <input class="url-shortener__input" type="url" name="url" placeholder="Shorten a link here..."
                   aria-label="url-input" required>
@@ -65,19 +65,19 @@
               <div class="url-shortener__result">
                 <div class="url-shortener__orginal-link">https://www.frontendmentor.io/div</div>
                 <a class="url-shortener__short-link" href="#" target="_blank">https://rel.ink/k4lKyk</a>
-                <button class="url-shortener__copy-button button button--small" type="button">Copy</button>
+                <button class="url-shortener__copy-button button button--small js-copy-short-link-button" type="button">Copy</button>
               </div>
 
               <div class="url-shortener__result">
                 <div class="url-shortener__orginal-link">https://twitter.com/frontendmentor</div>
                 <a class="url-shortener__short-link" href="#" target="_blank">https://rel.ink/gxOXp9</a>
-                <button class="url-shortener__copy-button button button--small" type="button">Copied</button>
+                <button class="url-shortener__copy-button button button--small js-copy-short-link-button" type="button">Copied</button>
               </div>
 
               <div class="url-shortener__result">
                 <div class="url-shortener__orginal-link">https://www.linkedin.com/company/frontend-mentor</div>
                 <a class="url-shortener__short-link" href="#" target="_blank">https://rel.ink/gob3X9</a>
-                <button class="url-shortener__copy-button button button--small" type="button">Copy</button>
+                <button class="url-shortener__copy-button button button--small js-copy-short-link-button" type="button">Copy</button>
               </div>
 
 
@@ -88,6 +88,14 @@
 
 
       <!-- INDEX-FEATURES -->
+      <section class="index-features">
+        <div class="container">
+          <div class="index-features__top">
+            <h2 class="index-features__title">Advanced Statistics</h2>
+            <p class="index-features__top-info">Track how your links are performing across the web with our advanced atatistics dashboard</p>
+          </div>
+        </div>
+      </section>
 
     </div>
   </main>

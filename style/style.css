@@ -300,10 +300,13 @@ color: var(--text-color-dark);
 }
 
 .url-shortener__results {
-  display: flex;
-  flex-direction: column;
+  display: none;
   font-size: 20px;
   line-height: 36px;
+}
+
+.url-shortener__results--open{
+  display: block;
 }
 
 .url-shortener__result {
@@ -334,4 +337,8 @@ color: var(--text-color-dark);
 
 .url-shortener__copy-button{
   min-width: 103px;
+}
+
+.url-shortener__copy-button--copied{
+  border-right-color: #3a3054;
 }
